@@ -2,12 +2,6 @@
   text-align: center
 }
 
-
-.App-logo {
-  height: 40vmin;
-}
-
-
 .App-landing {
   background-color: black;
   min-height: 100vh;
@@ -16,10 +10,5 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #f0ece2;
 }
-
-
-.App-link {
-  color: #09d3ac;
-} 
