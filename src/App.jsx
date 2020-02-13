@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import { Switch, Route, Redirect } from 'react-router-dom'
-// import {useSelect, useDispatch} from 'react-redux';
 import About from './components/About'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
@@ -10,11 +9,8 @@ import Resume from './components/Resume'
 import { StyledHeader, StyledLink } from './styles/HeaderStyle'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-// import {  } from '@fortawesome/fontawesome-svg-core'
 
 function App() {
-  // const state = useSelect(state => state)
-  // const dispatch = useDispatch()
   const openLinkedIn = () => {
     window.open("https://www.linkedin.com/in/jonathandavidscott/")
   }
