@@ -26,7 +26,4 @@ export const StyledLink = styled(NavLink)`
         color: black;
         /* background-color: white; */
     }
-    &.active {
-        color: ${props => props.theme.orange }
-    }
 `
