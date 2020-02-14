@@ -26,4 +26,8 @@ export const StyledLink = styled(NavLink)`
         color: black;
         /* background-color: white; */
     }
+    @media (max-width: 600px) {
+        font-size: 1.1rem;
+        margin: 0 1vw;
+    }
 `
