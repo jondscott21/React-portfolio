@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
     background: #69779b;
     height: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 `
 export const StyledLink = styled(NavLink)`
@@ -14,7 +14,7 @@ export const StyledLink = styled(NavLink)`
     font-size: 1.3rem;
     margin: 0 4vw;
     width: 100px;
-    height: 100%;
+    height: 50%;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     transition: color .5s ease;
