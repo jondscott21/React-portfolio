@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Particles from 'react-particles-js'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import About from './components/About'
 import Projects from './components/Projects'
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <Header /> 
       <div className="App-landing">
+        <Particles style={{position: 'absolute', zIndex: '1', top: '7%', left: '0', maxHeight: '93%', maxWidth:'100vw'}} />
         <Switch>
           <Route exact path="/" >
             <Redirect to='/about' />

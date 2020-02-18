@@ -5,6 +5,7 @@ export const ProjectsContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 80px;
     width: 90%;
     height: 100vh;
     font-size: 1rem;
