@@ -16,23 +16,23 @@ const Header = () => {
     const openEmail = () => {
         window.open("mailto:jonathan.scott@gmail.com")
     }
-    const listenForScroll = () => {
-        if(window.scrollY === 0) {
-            setOpacity({opacity: '1'})
-        }
-        else {
-            setOpacity({opacity: '0.5'})
-        }
-    }
-    useEffect(() => {
-        window.addEventListener('scroll', listenForScroll)
-    },[])
+    // const listenForScroll = () => {
+    //     if(window.scrollY === 0) {
+    //         setOpacity({opacity: '1'})
+    //     }
+    //     else {
+    //         setOpacity({opacity: '0.5'})
+    //     }
+    // }
+    // useEffect(() => {
+    //     window.addEventListener('scroll', listenForScroll)
+    // },[])
     return(
         <StyledHeader style={opacity}>
             <StyledLink activeStyle={{borderBottom: 'black solid 1px', color: 'black'}} to='/about'>About</StyledLink>
             <StyledLink activeStyle={{borderBottom: 'black solid 1px', color: 'black'}} to='/projects'>Projects</StyledLink>
             <StyledLink activeStyle={{borderBottom: 'black solid 1px', color: 'black'}} to='/skills'>Skills</StyledLink>
-            <StyledLink activeStyle={{borderBottom: 'black solid 1px', color: 'black'}} to='/contact'>Contact</StyledLink>
+            {/* <StyledLink activeStyle={{borderBottom: 'black solid 1px', color: 'black'}} to='/contact'>Contact</StyledLink> */}
             <StyledLink activeStyle={{borderBottom: 'black solid 1px', color: 'black'}} to='/resume'>Resume</StyledLink>
             <FontAwesomeIcon onClick={openGithub} style={{margin: '0 1vw', cursor: 'pointer'}} icon={faGithubSquare} size='4x' color='white' />
             <FontAwesomeIcon onClick={openLinkedIn} style={{margin: '0 1vw', cursor: 'pointer'}} icon={faLinkedin} size='4x' color='white' />
