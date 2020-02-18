@@ -6,7 +6,7 @@ import {StyledIFrame, IFrameWrapper} from '../styles/ResumeStyle'
 const Resume = () => {
     const [percent, setPercent] = useState(100)
     useEffect(() => {
-        if (window.innerWidth === 500) {
+        if (window.innerWidth <= 500) {
             setPercent(57)
         }
     },[window.innerWidth])
