@@ -13,8 +13,11 @@ export const ProjectsContainer = styled.div`
 
 export const ProjectDiv = styled.div`
     width: 35%;
-    height: 40%;
+    height: 80%;
     margin: 25px;
     border: solid white 1px;
     border-radius: 8px;
+    @media (max-width: 500px) {
+        width: 90%
+    }
 `

@@ -1,5 +1,8 @@
 .App {
-  text-align: center
+  text-align: center;
+  background-color: black;
+  min-height: 100%;
+  height: 100vh;
 }
 
 .App-landing {

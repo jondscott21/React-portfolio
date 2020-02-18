@@ -1,5 +1,6 @@
 import React from 'react'
 import { ProjectsContainer, ProjectDiv } from '../styles/ProjectsStyle'
+import didactGif from '../assets/didact.gif'
 
 
 const Projects = () => {
@@ -7,6 +8,7 @@ const Projects = () => {
         <ProjectsContainer>
             <ProjectDiv>
                 <h3>Didact</h3>
+                <img src={didactGif} height='80%' width='80%'></img>
                 <p>A web app that combines online learning resources in one location to combat the issue of unfinished online courses. 
 Tech Stack: Used a React/Redux front end with an Express backend.
 Built to the specifications of the stakeholder. Worked as a full stack developer with a team of 5 developers and  a U/X designer
