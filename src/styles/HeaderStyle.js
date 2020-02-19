@@ -22,7 +22,6 @@ export const StyledLink = styled(NavLink)`
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     transition: color .5s ease;
-    /* transition: background-color .5s ease; */
     display: flex;
     justify-content: center;
     align-items: center;

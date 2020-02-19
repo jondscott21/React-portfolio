@@ -6,6 +6,6 @@ export const SkillsContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 75%;
+    width: 85%;
     height: 100vh;
 `
