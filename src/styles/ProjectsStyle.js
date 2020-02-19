@@ -13,7 +13,7 @@ export const ProjectsContainer = styled.div`
 
 export const ProjectDiv = styled.div`
     width: 35%;
-    height: 500px;
+    height: 550px;
     margin: 25px;
     border: solid white 1px;
     border-radius: 8px;
@@ -26,4 +26,8 @@ export const ProjectDiv = styled.div`
     img {
         width: 80%;
     }
+`
+export const ProjectTextWrapper = styled.div`
+    margin: 10px 10%;
+    text-align: justify;
 `
