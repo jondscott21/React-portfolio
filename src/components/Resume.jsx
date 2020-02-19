@@ -4,17 +4,27 @@ import {StyledIFrame, IFrameWrapper} from '../styles/ResumeStyle'
 
 
 const Resume = () => {
-    const [percent, setPercent] = useState(100)
+    const [url, setUrl] = useState(`${MyResume}#zoom=100`)
+    const [loading, setLoading] = useState(false)
     useEffect(() => {
+       handleResize()
+       window.addEventListener('resize', handleResize)
+    },[window.innerWidth, url])
+    const handleResize = () => {
         if (window.innerWidth <= 500) {
-            setPercent(57)
+            setLoading(true)
+            setUrl(`${MyResume}#zoom=57`)
+            setLoading(false)
         }
-    },[window.innerWidth])
+    }
+    console.log(url)
     return(
         // <IFrameWrapper>
         //     <StyledIFrame  title="Jonathan Scott's Resume" src={MyResume} />
         // </IFrameWrapper>
-        <StyledIFrame  title="Jonathan Scott's Resume" src={`${MyResume}#zoom=${percent}`} />
+        <>
+            {!loading ? <StyledIFrame title="Jonathan Scott's Resume" src={url}  /> : null}
+        </>
     )   
 }
 
