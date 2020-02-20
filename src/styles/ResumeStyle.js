@@ -12,12 +12,12 @@ export const StyledDesktopIFrame = styled.iframe`
 `
 export const StyledMobileIFrame = styled.iframe`
         display: none;
-    @media (max-width: 500px) {
-        display: block;
         margin-top: 80px;
         width: 1px;
         min-height: 1180px;
         min-width: 99%;
         width:99%;
+    @media (max-width: 500px) {
+        display: block;
     }
 `
