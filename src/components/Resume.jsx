@@ -10,18 +10,17 @@ const Resume = () => {
        window.addEventListener('resize', handleResize)
     },[])
     const handleResize = () => {
-        if (window.innerWidth <= 500) {
+        if (window.visualViewport.width <= 500) {
             setLoading(true)
             setUrl(`${MyResume}#zoom=57`)
             setLoading(false)
         }
-        else if (window.innerWidth > 500) {
+        else if (window.visualViewport.width > 500) {
             setLoading(true)
             setUrl(`${MyResume}#zoom=100`)
             setLoading(false)
         }
     }
-    console.log(url)
     return(
         <>
             {!loading ? <StyledIFrame title="Jonathan Scott's Resume" src={url}  /> : null}

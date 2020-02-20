@@ -3,9 +3,6 @@ import { ContactWrapper, AnchorStyle } from '../styles/ContactStyle'
 
 
 const Contact = () => {
-    // const openLink = url => {
-    //     window.open(url)
-    // }
     return(
         <ContactWrapper>
             <h1>Contact Me Through:</h1>

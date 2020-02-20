@@ -21,7 +21,7 @@ export const ProjectDiv = styled.div`
     color: #000;
     font-weight: bold;
     @media (max-width: 500px) {
-        width: 90%
+        width: 95%
     }
     img {
         width: 80%;
