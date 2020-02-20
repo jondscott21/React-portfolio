@@ -9,8 +9,8 @@ const Resume = () => {
     },[])
     return(
         <>
-            <StyledDesktopIFrame className='desktop' title="Jonathan Scott's Resume" src={`${MyResume}#zoom=100`} />
-            <StyledMobileIFrame className='mobile' title="Jonathan Scott's Resume" src={`${MyResume}#zoom=45`} />
+            <StyledMobileIFrame title="Jonathan Scott's Resume" src={`${MyResume}#zoom=45`} />
+            <StyledDesktopIFrame title="Jonathan Scott's Resume" src={`${MyResume}#zoom=100`} />
         </>
     )   
 }
