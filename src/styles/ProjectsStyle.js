@@ -5,7 +5,7 @@ export const ProjectsContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 80px;
+    margin-top: 100px;
     width: 90%;
     height: 100vh;
     font-size: 1rem;
@@ -13,7 +13,7 @@ export const ProjectsContainer = styled.div`
 
 export const ProjectDiv = styled.div`
     width: 35%;
-    height: 550px;
+    height: 610px;
     margin: 25px;
     border: solid white 1px;
     border-radius: 8px;
@@ -21,13 +21,13 @@ export const ProjectDiv = styled.div`
     color: #000;
     font-weight: bold;
     @media (max-width: 500px) {
-        width: 95%
+        width: 95%;
     }
     img {
-        width: 80%;
+        width: 90%;
     }
 `
 export const ProjectTextWrapper = styled.div`
-    margin: 10px 10%;
+    margin: 10px 5%;
     text-align: justify;
 `

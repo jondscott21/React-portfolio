@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJs, faJava, faCss3Alt, faHtml5, faReact, faGitAlt, faPython, faNode } from '@fortawesome/free-brands-svg-icons'
 import { faGem, faDatabase } from '@fortawesome/free-solid-svg-icons'
@@ -6,6 +6,9 @@ import { SkillsContainer } from '../styles/SkillsStyles'
 
 
 const Skills = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    },[])
     return(
         <SkillsContainer>
             <div>

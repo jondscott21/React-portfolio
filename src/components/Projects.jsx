@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ProjectsContainer, ProjectDiv, ProjectTextWrapper } from '../styles/ProjectsStyle'
 import didactSnap from '../assets/didactSnap.PNG'
 import schoolSnap from '../assets/internationalSchoolSnap.PNG'
@@ -7,6 +7,9 @@ import bookrSnap from '../assets/bookrSnap.PNG'
 
 
 const Projects = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    },[])
     return (
         <ProjectsContainer>
             <ProjectDiv>
@@ -15,7 +18,12 @@ const Projects = () => {
                 <ProjectTextWrapper>
                     <p>A web app that combines online learning resources in one location to combat the issue of unfinished online courses.</p>
                     <p>Tech Stack: Used a React/Redux front end with an Express backend and a PostgreSQL database.</p>
-                    <p>Built to the specifications of the stakeholder. Worked as a full stack developer with a team of 5 developers and  a U/X designer Front end functionality including drag/drop Backend and frontend functionality for cascading checkmarks Udemy Api integration</p>
+                    <ul style={{paddingLeft: '20px'}}>
+                        <li>Built to the specifications of the stakeholder.</li>
+                        <li>Worked as a full stack developer with a team of 5 developers and  a U/X designer</li>
+                        <li>drag/drop functionality</li>
+                        <li>Backend and frontend functionality for cascading checkmarks Udemy Api integration</li>
+                    </ul>
                 </ProjectTextWrapper>
             </ProjectDiv>
             <ProjectDiv>
@@ -24,7 +32,11 @@ const Projects = () => {
                 <ProjectTextWrapper>
                     <p>A web app designed for finding nearby restaurants that fit your location/taste</p>
                     <p>Tech Stack: A React/Redux front end</p>
-                    <p>Built to the specifications of the U/X designer. Worked as a front end developer with a team of 5 developers and a U/X designer Zomato Api integration State management implemented from backend data</p>
+                    <ul style={{paddingLeft: '20px'}}>
+                        <li>Built to the specifications of the U/X designer.</li>
+                        <li>Worked as a front end developer with a team of 5 developers and a U/X designer</li>
+                        <li>Zomato Api integration State management implemented from backend data</li>
+                    </ul>
                 </ProjectTextWrapper>
             </ProjectDiv>
             <ProjectDiv>
@@ -33,7 +45,11 @@ const Projects = () => {
                 <ProjectTextWrapper>
                     <p>A web app designed for rating and reviewing textbooks</p>
                     <p>Tech Stack: A React front end</p>
-                    <p>Built to the specifications of the U/X designer. Worked as a front end developer with a team of 4 and a U/X designer Context Api implemented State management implemented from backend data</p>
+                    <ul style={{paddingLeft: '20px'}}>
+                        <li>Built to the specifications of the U/X designer.</li>
+                        <li>Worked as a front end developer with a team of 4 and a U/X designer</li>
+                        <li>Context Api implemented State management implemented from backend data</li>
+                    </ul>
                 </ProjectTextWrapper>
             </ProjectDiv>
             <ProjectDiv>
@@ -42,7 +58,13 @@ const Projects = () => {
                 <ProjectTextWrapper>
                     <p>An API designed to interface with a school and handle student and admin data.</p>
                     <p>Tech Stack: Java/Spring Boot with a PostgreSQL Database</p>
-                    <p>Handles student and admin data for a school and tracks visits to students from the school administration. </p>
+                    <ul style={{paddingLeft: '20px'}}>
+                        <li>Handles student and admin data for a school</li>
+                        <li>Tracks visits to students from the school administration.</li>
+                        <li>Admin CMS</li>
+                        <li>Oath2 implemented</li>
+                    </ul>
+                    <p></p>
                 </ProjectTextWrapper>
             </ProjectDiv>
         </ProjectsContainer>
