@@ -8,7 +8,7 @@ const Resume = () => {
     const [loading, setLoading] = useState(false)
     useEffect(() => {
        window.addEventListener('resize', handleResize)
-    },[window.innerWidth])
+    },[])
     const handleResize = () => {
         if (window.innerWidth <= 500) {
             setLoading(true)

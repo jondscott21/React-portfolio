@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { StyledHeader, StyledLink } from '../styles/HeaderStyle'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -6,7 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 
 const Header = () => {
-    const [opacity, setOpacity] = useState({opacity: '1'})
+    // const [opacity, setOpacity] = useState({opacity: '1'})
     const openLinkedIn = () => {
         window.open("https://www.linkedin.com/in/jonathandavidscott/")
       }
@@ -28,7 +28,7 @@ const Header = () => {
     //     window.addEventListener('scroll', listenForScroll)
     // },[])
     return(
-        <StyledHeader style={opacity}>
+        <StyledHeader>
             <StyledLink activeStyle={{borderBottom: 'black solid 1px', color: 'black'}} to='/about'>About</StyledLink>
             <StyledLink activeStyle={{borderBottom: 'black solid 1px', color: 'black'}} to='/projects'>Projects</StyledLink>
             <StyledLink activeStyle={{borderBottom: 'black solid 1px', color: 'black'}} to='/skills'>Skills</StyledLink>

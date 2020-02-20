@@ -1,6 +1,5 @@
 import React from 'react'
 import { ProjectsContainer, ProjectDiv, ProjectTextWrapper } from '../styles/ProjectsStyle'
-import didactGif from '../assets/didact.gif'
 import didactSnap from '../assets/didactSnap.PNG'
 import schoolSnap from '../assets/internationalSchoolSnap.PNG'
 import passportSnap from '../assets/passportSnap.PNG'
@@ -12,16 +11,16 @@ const Projects = () => {
         <ProjectsContainer>
             <ProjectDiv>
                 <h2>Didact</h2>
-                <img src={didactSnap} ></img>
+                <img src={didactSnap} alt='Didact screen shot' ></img>
                 <ProjectTextWrapper>
                     <p>A web app that combines online learning resources in one location to combat the issue of unfinished online courses.</p>
-                    <p>Tech Stack: Used a React/Redux front end with an Express backend.</p>
+                    <p>Tech Stack: Used a React/Redux front end with an Express backend and a PostgreSQL database.</p>
                     <p>Built to the specifications of the stakeholder. Worked as a full stack developer with a team of 5 developers and  a U/X designer Front end functionality including drag/drop Backend and frontend functionality for cascading checkmarks Udemy Api integration</p>
                 </ProjectTextWrapper>
             </ProjectDiv>
             <ProjectDiv>
                 <h2>Restaurant Passport</h2>
-                <img src={passportSnap} ></img>
+                <img src={passportSnap} alt='Restaurant Passport screen shot' ></img>
                 <ProjectTextWrapper>
                     <p>A web app designed for finding nearby restaurants that fit your location/taste</p>
                     <p>Tech Stack: A React/Redux front end</p>
@@ -30,7 +29,7 @@ const Projects = () => {
             </ProjectDiv>
             <ProjectDiv>
                 <h2>Bookr</h2>
-                <img src={bookrSnap} ></img>
+                <img src={bookrSnap} alt='Bookr screen shot' ></img>
                 <ProjectTextWrapper>
                     <p>A web app designed for rating and reviewing textbooks</p>
                     <p>Tech Stack: A React front end</p>
@@ -39,10 +38,10 @@ const Projects = () => {
             </ProjectDiv>
             <ProjectDiv>
                 <h2>International School</h2>
-                <img src={schoolSnap} ></img>
+                <img src={schoolSnap} alt='API code screen shot' ></img>
                 <ProjectTextWrapper>
                     <p>An API designed to interface with a school and handle student and admin data.</p>
-                    <p>Tech Stack: Java/Spring Boot with a Postgres Database</p>
+                    <p>Tech Stack: Java/Spring Boot with a PostgreSQL Database</p>
                     <p>Handles student and admin data for a school and tracks visits to students from the school administration. </p>
                 </ProjectTextWrapper>
             </ProjectDiv>
