@@ -13,7 +13,7 @@ export const StyledHeader = styled.header`
     justify-content: space-around;
     align-items: center;
     @media (max-width: 500px) {
-        /* height: 120px; */
+        justify-content: flex-start;
         flex-wrap: wrap;
     }
 
