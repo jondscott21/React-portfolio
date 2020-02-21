@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 
 export const StyledHeader = styled.header`
-    position: fixed;
-    top: 0;
+    /* position: fixed;
+    top: 0; */
     width: 100%;
     margin-bottom: 20px;
     background: #69779b;
@@ -61,7 +61,7 @@ export const TitleStyle = styled.p`
     line-height: 5px;
     @media (max-width: 500px) {
         margin: 0 10px;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 `
 export const TitleStyleMobile = styled.p`

@@ -20,7 +20,7 @@ const Header = () => {
         <StyledHeader>
             <TitleWrapper>
                 <TitleStyle>Jonathan Scott</TitleStyle>
-                <TitleStyleMobile>-</TitleStyleMobile>
+                {/* <TitleStyleMobile>-</TitleStyleMobile> */}
                 <TitleStyle>Full Stack Dev</TitleStyle>
             </TitleWrapper>
             <LinkWrapper>
