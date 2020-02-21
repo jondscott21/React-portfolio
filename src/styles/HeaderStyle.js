@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 
 export const StyledHeader = styled.header`
-    /* position: fixed;
-    top: 0; */
+    position: fixed;
+    top: 0;
     width: 100%;
     margin-bottom: 20px;
     background: #69779b;
@@ -12,15 +12,16 @@ export const StyledHeader = styled.header`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-bottom: solid black 1px;
     @media (max-width: 500px) {
-        justify-content: flex-start;
+        justify-content: center;
         flex-wrap: wrap;
     }
 
 `
 export const LinkWrapper = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     min-width: 50%;
     @media (max-width: 500px) {
@@ -30,7 +31,7 @@ export const LinkWrapper = styled.div`
 export const StyledLink = styled(NavLink)`
     color: white;
     font-size: 1.3rem;
-    margin: 0 1vw;
+    margin: 0 3vw;
     width: 90px;
     height: 50%;
     text-decoration: none;
@@ -47,10 +48,8 @@ export const StyledLink = styled(NavLink)`
     }
 `
 export const TitleWrapper = styled.p`
-    /* max-width: 10%; */
     @media (max-width: 500px) {
         display: flex;
-        max-width: 100%;
         order: 1
     }
 `
@@ -77,7 +76,6 @@ export const TitleStyleMobile = styled.p`
 `
 
 export const IconWrapper = styled.div`
-    /* min-width: 30%; */
     @media (max-width: 500px) {
         order: 2
     }

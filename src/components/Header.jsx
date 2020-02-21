@@ -20,8 +20,8 @@ const Header = () => {
         <StyledHeader>
             <TitleWrapper>
                 <TitleStyle>Jonathan Scott</TitleStyle>
-                {/* <TitleStyleMobile>-</TitleStyleMobile> */}
-                <TitleStyle>Full Stack Dev</TitleStyle>
+                <TitleStyle>Full Stack Developer</TitleStyle>
+                <TitleStyleMobile>Jonathan Scott - Full Stack Developer</TitleStyleMobile>
             </TitleWrapper>
             <LinkWrapper>
                 <StyledLink activeStyle={{borderBottom: 'black solid 1px', color: 'black'}} to='/about'>About</StyledLink>
@@ -30,9 +30,9 @@ const Header = () => {
                 <StyledLink activeStyle={{borderBottom: 'black solid 1px', color: 'black'}} to='/resume'>Resume</StyledLink>
             </LinkWrapper>
             <IconWrapper>
-                <FontAwesomeIcon onClick={openGithub} style={{margin: '0 1vw', cursor: 'pointer'}} icon={faGithubSquare} size='3x' color='white' />
-                <FontAwesomeIcon onClick={openLinkedIn} style={{margin: '0 1vw', cursor: 'pointer'}} icon={faLinkedin} size='3x' color='white' />
-                <FontAwesomeIcon onClick={openEmail} style={{margin: '0 1vw', cursor: 'pointer'}} icon={faEnvelope} size='3x' color='white' />
+                <FontAwesomeIcon onClick={openGithub} style={{margin: '0 2vw', cursor: 'pointer'}} icon={faGithubSquare} size='3x' color='white' />
+                <FontAwesomeIcon onClick={openLinkedIn} style={{margin: '0 2vw', cursor: 'pointer'}} icon={faLinkedin} size='3x' color='white' />
+                <FontAwesomeIcon onClick={openEmail} style={{margin: '0 2vw', cursor: 'pointer'}} icon={faEnvelope} size='3x' color='white' />
             </IconWrapper>
         </StyledHeader>
     )
