@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledHeader, LinkWrapper, StyledLink, TitleWrapper, TitleStyle, TitleStyleMobile, IconWrapper } from '../styles/HeaderStyle'
+import { StyledHeader, LinkWrapper, StyledLink, TitleWrapper, NameStyle, TitleStyle, IconWrapper, StyledFontAwesomeIcon } from '../styles/HeaderStyle'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -19,9 +19,8 @@ const Header = () => {
     return(
         <StyledHeader>
             <TitleWrapper>
-                <TitleStyle>Jonathan Scott</TitleStyle>
+                <NameStyle>Jonathan Scott</NameStyle>
                 <TitleStyle>Full Stack Developer</TitleStyle>
-                <TitleStyleMobile>Jonathan Scott</TitleStyleMobile>
             </TitleWrapper>
             <LinkWrapper>
                 <StyledLink activeStyle={{borderBottom: 'black solid 1px', color: 'black'}} to='/about'>About</StyledLink>
@@ -30,9 +29,9 @@ const Header = () => {
                 <StyledLink activeStyle={{borderBottom: 'black solid 1px', color: 'black'}} to='/resume'>Resume</StyledLink>
             </LinkWrapper>
             <IconWrapper>
-                <FontAwesomeIcon onClick={openGithub} style={{margin: '0 3vw', cursor: 'pointer'}} icon={faGithubSquare} size='3x' color='white' />
-                <FontAwesomeIcon onClick={openLinkedIn} style={{margin: '0 3vw', cursor: 'pointer'}} icon={faLinkedin} size='3x' color='white' />
-                <FontAwesomeIcon onClick={openEmail} style={{margin: '0 3vw', cursor: 'pointer'}} icon={faEnvelope} size='3x' color='white' />
+                <StyledFontAwesomeIcon onClick={openGithub} icon={faGithubSquare} size='3x' color='white' />
+                <StyledFontAwesomeIcon onClick={openLinkedIn} icon={faLinkedin} size='3x' color='white' />
+                <StyledFontAwesomeIcon onClick={openEmail} icon={faEnvelope} size='3x' color='white' />
             </IconWrapper>
         </StyledHeader>
     )

@@ -17,3 +17,7 @@ code {
     monospace;
 }
 
+h1, h2, h3, h4, a, p, li {
+  font-family: 'Roboto', sans-serif;
+}
+
