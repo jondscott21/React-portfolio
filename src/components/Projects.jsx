@@ -28,7 +28,7 @@ const Projects = () => {
             </ProjectDiv>
             <ProjectDiv>
                 <h2>Restaurant Passport</h2>
-                <img src={passportSnap} alt='Restaurant Passport screen shot' ></img>
+                <img src={passportSnap} alt='Restaurant Passport screen shot'></img>
                 <ProjectTextWrapper>
                     <p>A web app designed for finding nearby restaurants that fit your location/taste</p>
                     <p>Tech Stack: A React/Redux front end</p>
