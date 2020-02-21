@@ -60,6 +60,7 @@ export const TitleStyle = styled.p`
     color: white;
     line-height: 5px;
     @media (max-width: 500px) {
+        display: none;
         margin: 0 10px;
         font-size: 1rem;
     }
