@@ -20,7 +20,7 @@ const Header = () => {
         <StyledHeader>
             <TitleWrapper>
                 <NameStyle>Jonathan Scott</NameStyle>
-                <TitleStyle>Full Stack Developer</TitleStyle>
+                <TitleStyle>Full-Stack Developer</TitleStyle>
             </TitleWrapper>
             <LinkWrapper>
                 <StyledLink activeStyle={{borderBottom: 'black solid 1px', color: 'black'}} to='/about'>About</StyledLink>
