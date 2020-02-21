@@ -13,7 +13,7 @@ export const StyledDesktopIFrame = styled.iframe`
 export const StyledMobileIFrame = styled.iframe`
         margin-top: 80px;
         min-width: 99%;
-        /* width: 1px; */
+        width: 1px;
         min-height: 812px;
         display: none;
     @media (max-width: 500px) {
