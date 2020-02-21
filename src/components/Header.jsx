@@ -1,12 +1,10 @@
 import React from 'react'
 import { StyledHeader, LinkWrapper, StyledLink, TitleWrapper, NameStyle, TitleStyle, IconWrapper, StyledFontAwesomeIcon } from '../styles/HeaderStyle'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 
 const Header = () => {
-    // const [opacity, setOpacity] = useState({opacity: '1'})
     const openLinkedIn = () => {
         window.open("https://www.linkedin.com/in/jonathandavidscott/")
       }

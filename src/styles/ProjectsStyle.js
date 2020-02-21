@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 export const ProjectsContainer = styled.div`
     display: flex;
@@ -15,8 +17,9 @@ export const ProjectsContainer = styled.div`
 `
 
 export const ProjectDiv = styled.div`
+    position: relative;
     width: 35%;
-    height: 610px;
+    height: 680px;
     margin: 25px;
     border: solid white 1px;
     background-color: #69779b;
@@ -25,6 +28,9 @@ export const ProjectDiv = styled.div`
         margin-left: 5%;
         text-align: justify;
     }
+    @media (max-width: 1000px) {
+        width: 70%;
+    }
     @media (max-width: 500px) {
         width: 99%;
     }
@@ -32,7 +38,23 @@ export const ProjectDiv = styled.div`
         width: 90%;
     }
 `
+
 export const ProjectTextWrapper = styled.div`
     margin: 10px 5%;
     text-align: justify;
+`
+export const ProjectFontAwesomeIcon = styled(FontAwesomeIcon)`
+    cursor: pointer;
+    position: absolute;
+    left: 85%;
+    top: 90%;
+`
+export const Project2FontAwesomeIcon = styled(FontAwesomeIcon)`
+    cursor: pointer;
+    position: absolute;
+    left: 70%;
+    top: 90%;
+    @media (max-width: 500px) {
+        left: 74%;
+    }
 `
