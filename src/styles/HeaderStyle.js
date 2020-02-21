@@ -14,7 +14,6 @@ export const StyledHeader = styled.header`
     align-items: center;
     border-bottom: solid black 1px;
     @media (max-width: 500px) {
-        justify-content: center;
         flex-wrap: wrap;
     }
 
