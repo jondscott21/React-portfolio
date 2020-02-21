@@ -33,6 +33,7 @@ export const ProjectDiv = styled.div`
     }
     @media (max-width: 500px) {
         width: 99%;
+        height: auto;
     }
     img {
         width: 90%;
@@ -42,19 +43,17 @@ export const ProjectDiv = styled.div`
 export const ProjectTextWrapper = styled.div`
     margin: 10px 5%;
     text-align: justify;
+    @media (max-width: 500px) {
+        padding-bottom: 80px;
+    }
 `
 export const ProjectFontAwesomeIcon = styled(FontAwesomeIcon)`
     cursor: pointer;
     position: absolute;
     left: 85%;
     top: 90%;
-`
-export const Project2FontAwesomeIcon = styled(FontAwesomeIcon)`
-    cursor: pointer;
-    position: absolute;
-    left: 70%;
-    top: 90%;
     @media (max-width: 500px) {
-        left: 74%;
+        top: auto;
+        bottom: 20px;
     }
 `
