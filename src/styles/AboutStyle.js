@@ -20,5 +20,9 @@ export const PhotoStyle = styled.img`
 `
 export const TextWrapper = styled.div`
     margin-left: 30px;
+    max-width: 60%;
+    @media (max-width: 500px) {
+        max-width: 100%;
+    }
     /* text-align: justify; */
 `

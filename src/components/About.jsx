@@ -12,7 +12,7 @@ const About = () => {
                 <h2>Hi, I'm Jonathan.</h2>
                 <p>I'm a full stack developer living near San Jose</p>
                 <p>I bring hard work and a strong desire to suceed to any team I'm on.</p>
-                <p>I love creating and fine-tuning projects, learning new technologies, and building team comraderie</p>
+                <p>I love creating and fine-tuning projects; learning new technologies, and building team comraderie.</p>
             </TextWrapper>
             <PhotoStyle  src={myPhoto} />
         </AboutWrapper>
