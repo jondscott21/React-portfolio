@@ -9,6 +9,9 @@ export const ProjectsContainer = styled.div`
     width: 90%;
     height: 100vh;
     font-size: 1rem;
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 `
 
 export const ProjectDiv = styled.div`
@@ -16,15 +19,13 @@ export const ProjectDiv = styled.div`
     height: 610px;
     margin: 25px;
     border: solid white 1px;
-    border-radius: 8px;
     background-color: #69779b;
     color: #000;
-    /* font-weight: bold; */
     @media (max-width: 500px) {
-        width: 95%;
+        width: 99%;
     }
     img {
-        width: 90%;
+        width: 95%;
     }
 `
 export const ProjectTextWrapper = styled.div`

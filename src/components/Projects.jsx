@@ -16,7 +16,7 @@ const Projects = () => {
                 <h2>Didact</h2>
                 <img src={didactSnap} alt='Didact screen shot' ></img>
                 <ProjectTextWrapper>
-                    <p>A web app that combines online learning resources in one location to combat the issue of unfinished online courses.</p>
+                    <p>Didact is a web app that combines online learning resources in one location to combat the issue of unfinished online courses.</p>
                     <p>Tech Stack: Used a React/Redux front end with an Express backend and a PostgreSQL database.</p>
                     <ul style={{paddingLeft: '20px'}}>
                         <li>Built to the specifications of the stakeholder.</li>
