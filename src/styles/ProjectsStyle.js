@@ -21,11 +21,15 @@ export const ProjectDiv = styled.div`
     border: solid white 1px;
     background-color: #69779b;
     color: #000;
+    h2 {
+        margin-left: 5%;
+        text-align: justify;
+    }
     @media (max-width: 500px) {
         width: 99%;
     }
     img {
-        width: 95%;
+        width: 90%;
     }
 `
 export const ProjectTextWrapper = styled.div`
