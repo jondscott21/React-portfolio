@@ -21,7 +21,7 @@ const Header = () => {
             <TitleWrapper>
                 <TitleStyle>Jonathan Scott</TitleStyle>
                 <TitleStyle>Full Stack Developer</TitleStyle>
-                <TitleStyleMobile>Jonathan Scott - Full Stack Developer</TitleStyleMobile>
+                <TitleStyleMobile>Jonathan Scott Full Stack Dev</TitleStyleMobile>
             </TitleWrapper>
             <LinkWrapper>
                 <StyledLink activeStyle={{borderBottom: 'black solid 1px', color: 'black'}} to='/about'>About</StyledLink>
