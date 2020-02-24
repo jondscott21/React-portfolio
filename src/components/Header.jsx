@@ -5,14 +5,10 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 
 const Header = () => {
-    const openLinkedIn = () => {
-        window.open("https://www.linkedin.com/in/jonathandavidscott/")
-      }
-    const openGithub = () => {
-        window.open("https://github.com/jondscott21")
-    }
-    const openEmail = () => {
-        window.open("mailto:jonathan.scott@gmail.com")
+    const openWindow = (url) => {
+        let newWindow = window.open()
+        newWindow.opener = null;
+        newWindow.location = url; 
     }
     return(
         <StyledHeader>
@@ -27,9 +23,9 @@ const Header = () => {
                 <StyledLink activeStyle={{borderBottom: 'black solid 1px', color: 'black'}} to='/resume'>Resume</StyledLink>
             </LinkWrapper>
             <IconWrapper>
-                <StyledFontAwesomeIcon onClick={openGithub} icon={faGithubSquare} size='3x' color='white' />
-                <StyledFontAwesomeIcon onClick={openLinkedIn} icon={faLinkedin} size='3x' color='white' />
-                <StyledFontAwesomeIcon onClick={openEmail} icon={faEnvelope} size='3x' color='white' />
+                <StyledFontAwesomeIcon onClick={() => openWindow("https://github.com/jondscott21")} icon={faGithubSquare} size='3x' color='white' />
+                <StyledFontAwesomeIcon onClick={() => openWindow("https://www.linkedin.com/in/jonathandavidscott/")} icon={faLinkedin} size='3x' color='white' />
+                <StyledFontAwesomeIcon onClick={() => openWindow("mailto:jonathan.scott@gmail.com")} icon={faEnvelope} size='3x' color='white' />
             </IconWrapper>
         </StyledHeader>
     )
